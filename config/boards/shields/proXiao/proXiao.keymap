@@ -15,6 +15,33 @@
 #define ADJ 3
 
 / {
+    combos {
+        compatible = "zmk,combos";
+        combo_F2 {
+            timeout-ms = <50>;
+            key-positions = <0 1>;
+            bindings = <&kp F2>;
+        };
+        combo_ENTER {
+            timeout-ms = <50>;
+            key-positions = <15 16>;
+            bindings = <&kp ENTER>;
+        };
+         combo_BS {
+            timeout-ms = <50>;
+            key-positions = <16 17>;
+            bindings = <&kp BSPC>;
+        };
+        combo_Del {
+            timeout-ms = <50>;
+            key-positions = <40 41>;
+            bindings = <&kp DEL>;
+        };
+    };
+};
+
+
+/ {
 	keymap {
 		compatible = "zmk,keymap";
 
