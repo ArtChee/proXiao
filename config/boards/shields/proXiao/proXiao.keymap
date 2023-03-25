@@ -17,6 +17,46 @@
 &lt { quick_tap_ms = <200>; };
 &mt { quick_tap_ms = <200>; };
 
+/ {
+    behaviors {
+        kp: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick_tap_ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+    };
+};
+
+
+/ {
+    combos {
+        compatible = "zmk,combos";
+        combo_F2 {
+            timeout-ms = <50>;
+            key-positions = <0 1>;
+            bindings = <&kp F2>;
+        };
+        combo_ENTER {
+            timeout-ms = <50>;
+            key-positions = <15 16>;
+            bindings = <&kp ENTER>;
+        };
+         combo_BS {
+            timeout-ms = <50>;
+            key-positions = <16 17>;
+            bindings = <&kp BSPC>;
+        };
+        combo_Del {
+            timeout-ms = <50>;
+            key-positions = <40 41>;
+            bindings = <&kp DEL>;
+        };
+    };
+};
 
 / {
 	keymap {
