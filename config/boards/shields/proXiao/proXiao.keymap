@@ -14,67 +14,17 @@
 #define RSE 2
 #define ADJ 3
 
-&lt { quick_tap_ms = <200>; };
-&mt { quick_tap_ms = <200>; };
-
 / {
-    behaviors {
-        kp: homerow_mods {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick_tap_ms = <0>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-        };
-    };
-};
+	keymap {
+		compatible = "zmk,keymap";
 
-
-/ {
-    combos {
-        compatible = "zmk,combos";
-        combo_F2 {
-            timeout-ms = <50>;
-            key-positions = <0 1>;
-            bindings = <&kp F2>;
-        };
-        combo_ENTER {
-            timeout-ms = <50>;
-            key-positions = <15 16>;
-            bindings = <&kp ENTER>;
-        };
-         combo_BS {
-            timeout-ms = <50>;
-            key-positions = <16 17>;
-            bindings = <&kp BSPC>;
-        };
-        combo_Del {
-            timeout-ms = <50>;
-            key-positions = <40 41>;
-            bindings = <&kp DEL>;
-        };
-    };
-};
-
-
-/ {
-        keymap {
-                compatible = "zmk,keymap";
-
-                default_layer {
-// ┌───────┬───────┬───────┬───────┬───────┬───────┐                      ┌───────┬───────┬───────┬───────┬───────┬───────┐
-// |  ESC  |   1   |   2   |   3   |   4   |   5   |                      |       |       |       |       |       |       |
-// ├───────┼───────┼───────┼───────┼───────┼───────┤                      ├───────┼───────┼───────┼───────┼───────┼───────┤
-// |  TAB  |   T   |   Q   |   W   |   E   |   R   |                      |       |       |       |       |       |       |
-// ├───────┼───────┼───────┼───────┼───────┼───────┤                      ├───────┼───────┼───────┼───────┼───────┼───────┤
-// |   H   |  SHFT |   A   |   S   |   D   |   F   |                      |       |       |       |       |       |       |
-// ├───────┼───────┼───────┼───────┼───────┼───────┼───────┐      ┌───────┼───────┼───────┼───────┼───────┼───────┼───────┤
-// |       |  CTRL |   Z   |   X   |   C   |   V   |   G   |      |       |       |       |       |       |       |       |
-// └───────┴───────┴───────┼───────┼───────┼───────┼───────┤      ├───────┼───────┼───────┼───────┼───────┴───────┴───────┘
-//                         |  ALT  |  LWR  |  RSE  |  SPC  |      |       |       |       |       |
-//                         └───────┴───────┴───────┴───────┘      └───────┴───────┴───────┴───────┘
+		default_layer {
+// ------------------------------------------------------------------------------------------------------------
+// |  ESC  |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |   `   |
+// |  TAB  |  Q  |  W  |  E   |  R   |  T   |                   |  Y   |  U    |  I    |  O   |   P   |   -   |
+// |  CTRL |  A  |  S  |  D   |  F   |  G   |                   |  H   |  J    |  K    |  L   |   ;   |   '   |
+// | SHIFT |  Z  |  X  |  C   |  V   |  B   |   "["  |  |  "]"  |  N   |  M    |  ,    |  .   |   /   | SHIFT |
+//                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
 			bindings = <
 &kp ESC   &kp N1 &kp N2 &kp N3   &kp N4   &kp N5                     &kp N6 &kp N7   &kp N8    &kp N9  &kp N0   &kp GRAVE
 &kp TAB   &kp Q  &kp W  &kp E    &kp R    &kp T                      &kp Y  &kp U    &kp I     &kp O   &kp P    &kp MINUS
