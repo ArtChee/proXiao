@@ -57,14 +57,14 @@
 // ├───────┼───────┼───────┼───────┼───────┼───────┼───────┐      ┌───────┼───────┼───────┼───────┼───────┼───────┼───────┤
 // |       |  CTRL |   Z   |   X   |   C   |   V   |   G   |      |       |       |       |       |       |       |       |
 // └───────┴───────┴───────┼───────┼───────┼───────┼───────┤      ├───────┼───────┼───────┼───────┼───────┴───────┴───────┘
-//                         |  ALT  |  LWR  |  RSE  |  SPC  |      |       |       |       |       |
+//                         |  ALT  |  RSE  |  LWR  |  SPC  |      |       |       |       |       |
 //                         └───────┴───────┴───────┴───────┘      └───────┴───────┴───────┴───────┘
 			bindings = <
      &kp ESC  &kp N1     &kp N2  &kp N3  &kp N4  &kp N5                     &none   &none   &none   &none   &none   &none
      &kp TAB  &kp T      &kp Q   &kp W   &kp E   &kp R                      &none   &none   &none   &none   &none   &none
      &kp H    &kp LSHFT  &kp A   &kp S   &kp D   &kp F                      &none   &none   &none   &none   &none   &none
      &none    &kp LCTRL  &kp Z   &kp X   &kp C   &kp V  &kp G       &none   &none   &none   &none   &none   &none   &none
-                       &kp LALT  &mo LWR  &mo RSE   &kp SPACE       &none   &none   &none   &none
+                       &kp LALT  &mo RSE &mo LWR    &kp SPACE       &none   &none   &none   &none
 			>;
                 };
 
@@ -85,7 +85,7 @@
      &none    &none   &none      &kp UP    &none      &kp HOME                 &none   &none   &none   &none   &none   &none
      &none    &none   &kp LEFT   &kp DOWN  &kp RIGHT  &kp END                  &none   &none   &none   &none   &none   &none
      &none    &none   &kp PG_UP  &none     &kp PG_DN  &none  &none     &none   &none   &none   &none   &none   &none   &none
-                                 &kp LALT  &trans  &mo ADJ  &trans     &none   &none   &none   &none
+                                 &kp LALT  &trans  &mo ADJ   &trans    &none   &none   &none   &none
                         >;
                 };
 
