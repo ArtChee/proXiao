@@ -55,7 +55,7 @@
 // ├───────┼───────┼───────┼───────┼───────┼───────┤                      ├───────┼───────┼───────┼───────┼───────┼───────┤
 // |   H   |  SHFT |   A   |   S   |   D   |   F   |                      |       |       |       |       |       |       |
 // ├───────┼───────┼───────┼───────┼───────┼───────┼───────┐      ┌───────┼───────┼───────┼───────┼───────┼───────┼───────┤
-// |       |  CTRL |   Z   |   X   |   C   |   V   |   G   |      |       |       |       |       |       |       |       |
+// |   I   |  CTRL |   Z   |   X   |   C   |   V   |   G   |      |       |       |       |       |       |       |       |
 // └───────┴───────┴───────┼───────┼───────┼───────┼───────┤      ├───────┼───────┼───────┼───────┼───────┴───────┴───────┘
 //                         |  ALT  |  RSE  |  LWR  |  SPC  |      |       |       |       |       |
 //                         └───────┴───────┴───────┴───────┘      └───────┴───────┴───────┴───────┘
@@ -63,7 +63,7 @@
      &kp ESC  &kp N1     &kp N2  &kp N3  &kp N4  &kp N5                     &none   &none   &none   &none   &none   &none
      &kp TAB  &kp T      &kp Q   &kp W   &kp E   &kp R                      &none   &none   &none   &none   &none   &none
      &kp H    &kp LSHFT  &kp A   &kp S   &kp D   &kp F                      &none   &none   &none   &none   &none   &none
-     &none    &kp LCTRL  &kp Z   &kp X   &kp C   &kp V  &kp G       &none   &none   &none   &none   &none   &none   &none
+     &kp I    &kp LCTRL  &kp Z   &kp X   &kp C   &kp V  &kp G       &none   &none   &none   &none   &none   &none   &none
                        &kp LALT  &mo RSE &mo LWR    &kp SPACE       &none   &none   &none   &none
 			>;
                 };
