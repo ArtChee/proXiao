@@ -72,7 +72,7 @@
 // ┌───────┬───────┬───────┬───────┬───────┬───────┐                         ┌───────┬───────┬───────┬───────┬───────┬───────┐
 // |  TAB  |   6   |   7   |   8   |   9   |   0   |                         |       |       |       |       |       |       |
 // |-------+-------+-------+-------+-------+-------|                         |-------+-------+-------+-------+-------+-------|
-// |       |       |       |   UP  |       |  HOME |                         |       |       |       |       |       |       |
+// |  CAPS |       |       |   UP  |       |  HOME |                         |       |       |       |       |       |       |
 // |-------+-------+-------+-------+-------+-------|                         |-------+-------+-------+-------+-------+-------|
 // |       |       |  LEFT |  DOWN | RIGHT |  END  |                         |       |       |       |       |       |       |
 // ├───────┼───────┼───────┼───────┼───────┼───────┼───────┐         ┌───────┼───────┼───────┼───────┼───────┼───────┼───────┤
@@ -82,7 +82,7 @@
 //                         └───────┴───────┴───────┴───────┘         └───────┴───────┴───────┴───────┘
                         bindings = <
      &kp TAB  &kp N1  &kp N2     &kp N3    &kp N4     &kp N5                   &none   &none   &none   &none   &none   &none
-     &none    &none   &none      &kp UP    &none      &kp HOME                 &none   &none   &none   &none   &none   &none
+     &kp CAPS &none   &none      &kp UP    &none      &kp HOME                 &none   &none   &none   &none   &none   &none
      &none    &none   &kp LEFT   &kp DOWN  &kp RIGHT  &kp END                  &none   &none   &none   &none   &none   &none
      &none    &none   &kp PG_UP  &none     &kp PG_DN  &none  &none     &none   &none   &none   &none   &none   &none   &none
                                  &kp LALT  &trans  &mo ADJ   &trans    &none   &none   &none   &none
